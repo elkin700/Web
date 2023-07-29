@@ -1,0 +1,63 @@
+body{
+    font-family: sans-serif;
+    background-color: rgba(119, 150, 216, 0.753);
+}
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+  .search-bar{
+    border: solid 1px rgb(82, 80, 204);
+    border-radius: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 10px;
+    margin: 10px auto;
+  }
+  .search-bar:focus-within{
+    border: solid 1px rgb(98, 0, 255);
+    box-shadow: 10px 5px 5px black;
+  }
+  .search-bar input{
+    border: none;
+    outline: none;
+    background: none;
+    pad: 10px;
+    font-size: 18px;
+    flex: auto;
+  }
+  .search-bar .actions{
+    display: flex;
+    gap: 5px;
+  }
+  .search-bar .actions button{
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    color: rgb(82, 80, 204);
+  }
+  .search-bar .actions button:hover{
+    color: purple;
+  }
