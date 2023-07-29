@@ -1,0 +1,77 @@
+body{
+    font-family: sans-serif;
+    background-color: rgba(174, 219, 223, 0.753);
+    padding: 0;
+    margin: 0;
+}
+.container{
+    background-color: rgb(88, 192, 192);
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+}
+.container .sub-container{
+    width: 600px;
+    border-radius: 25px;
+    background-color: rgb(175, 211, 243);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 10px rgb(11, 73, 75);
+}
+.container .sub-container .contenido{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+    flex: auto;
+}
+.container .sub-container .contenido .icon{
+    margin-right: 10px;
+}
+.container .sub-container .contenido .mensaje .title{
+    margin-right: 10px;
+}
+.container .sub-container .actions{
+    padding: 10px 0;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+.container .sub-container .actions button{
+    border: none;
+    padding: 5px;
+    min-width: 120px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+.container .sub-container .actions .btn-descargar{
+    background-color: rgb(88, 192, 192);
+    color: white;
+    border: solid 1px rgb(6, 143, 255);
+    border-radius: 15px;
+}
+.container .sub-container .actions .btn-descargar:hover{
+    background-color: rgb(10, 52, 71);
+}
+.container .sub-container .actions .btn-volver{
+    background-color: rgb(88, 192, 192);
+    color: white;
+    border: solid 1px rgb(6, 143, 255);
+    border-radius: 15px;
+}
+.container .sub-container .actions .btn-volver:hover{
+    background-color: rgb(10, 52, 71);
+}
+@media (max-width:600px) {
+    .container .sub-container{
+        width: 85%;
+    }
+    .container .sub-container .actions{
+        flex-direction: column;
+    }
+}
